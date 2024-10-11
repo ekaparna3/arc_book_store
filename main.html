@@ -1,0 +1,242 @@
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensures consistent sizing */
+            background-color: #2c3e50;
+        }
+
+        body {
+            background-color: #2c3e50;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: aliceblue; /* Darker text color for contrast */
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between; /* Space between links and buttons */
+            align-items: center;
+            padding: 10px 20px;
+            background-color: aliceblue; /* Navigation bar color */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav ul {
+            list-style: none; /* Remove default list styles */
+            margin-right: 20px; /* Space between list and buttons */
+        }
+
+        .nav ul li {
+            display: inline; /* Inline list items */
+            margin-right: 15px; /* Space between items */
+            color: white; /* Text color for links */
+            font-weight: bold; /* Bold text */
+            cursor: pointer; /* Pointer on hover */
+        }
+
+        .nav a {
+            text-decoration: none; /* Remove underline */
+            color: #fff; /* Button text color */
+            padding: 10px 15px;
+            border: 2px solid transparent; /* Initial border */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+            margin-left: 10px; /* Space between buttons */
+        }
+
+        .nav a:hover {
+            background-color: white; /* Background color on hover */
+            color: #3498db; /* Change text color on hover */
+            border-color: #3498db; /* Show border on hover */
+        }
+    </style>
+
+
+<body>
+    <h1>ARC BOOKS</h1>
+    <div class="nav">
+        <div class="nav-link">
+            <ul>
+                <li>About</li>
+            </ul>
+            <a href="{% url 'reg_view' %}" class="btn btn-outline-dark">REGISTER</a>
+            <a href="{% url 'log_view' %}" class="btn btn-outline-dark">LOGIN</a>
+        </div>
+    </div>
+</body>
+</html>
+                    
+  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARC BOOKS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* Ensures consistent sizing */
+            
+        }
+
+        body {
+            /* background-color: #2c3e50; */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 20px;
+            line-height: 1.6;
+            background-image: url('static/images/bookstore.jpg');
+            background-size: 1540px 1100px;
+            text-decoration:solid;
+        }
+
+        h1 {
+            text-align: center;
+            color: aliceblue;
+            /* Light text color for contrast */
+            margin-bottom: 10px;
+            font-size: 500%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            /* Center items in the nav */
+            align-items: center;
+            padding: 20px 25px;
+            /* background-color: rgb(0, 2, 3); */
+            /* Background color for nav */
+            border-radius: 5px;
+            /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+            margin: 0 auto;
+            /* Center the nav bar */
+            max-width: 600px;
+            /* Set a max width for the nav */
+        }
+
+        .nav form {
+            display: flex;
+            /* Flexbox for form layout */
+            justify-content: space-between;
+            /* Space between buttons */
+            width: 100%;
+            /* Full width */
+        }
+
+        .nav a {
+            text-decoration: none;
+            /* Remove underline */
+            color: #fff;
+            /* Button text color */
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            /* Initial border */
+            border-radius: 5px;
+            /* Rounded corners */
+            transition: background-color 0.3s, border-color 0.3s;
+            /* Smooth transition */
+            margin: 0 5px;
+            /* Space between buttons */
+            flex: 1;
+            /* Flex to take equal space */
+            text-align: center;
+            /* Center text in buttons */
+        }
+
+        .nav a:hover {
+            background-color: white;
+            /* Background color on hover */
+            color: black;
+            /* Change text color on hover */
+            border-color: #2c3e50;
+            /* Show border on hover */
+        }
+
+        p {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 800;
+            font-style: italic;
+            font-size: large;
+            color: #fff;
+            margin-top: 20px;
+            line-height: 150%;
+        }
+        a{
+            font-weight: 600;
+            font-size:xx-large;
+        }
+        .btn-spacing {
+        margin-right: 30px; /* Adjust as needed */
+    }
+        form{
+            box-sizing:border-box;
+            box-shadow: inset;
+            background-color: teal;
+            justify-content: space-around;
+            border-color: aliceblue;
+            border-style:inherit;
+            border-radius: 2%;
+            /* justify-items: ; */
+            white-space: 20%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ARC BOOKS</h1><br><br>
+    <p class="container">Welcome to ARC BOOKS: 
+                "Your Literary Haven" <br><br>
+
+        At ARC BOOKS, we believe that every book has the power to transform lives.
+        Nestled in the heart of the community, our cozy bookstore invites you to explore a
+        curated selection of titles across a variety of genres—fiction, non-fiction, poetry,
+        and more. Whether you’re seeking a thrilling adventure, a thought-provoking memoir,
+        or the latest bestseller, you’ll find it here.Our knowledgeable staff is passionate about reading
+        and is always ready to recommend the perfect book to match your interests. Enjoy our comfortable reading
+        nooks, where you can sip on a freshly brewed coffee from our café while diving into your next literary
+        adventure.
+        Join us for weekly book signings, author readings, and community events that celebrate the joy of reading.
+        At ARC BOOKS, we’re not just about selling books; we’re about building a community of readers. Come visit us and
+        discover your next favorite story!</p><br><br><br>
+    <div class="nav ">
+        <form>
+            <a href="{% url 'reg_view' %}" class="btn btn-outline-dark">REGISTER</a>
+            <a href="{% url 'log_view' %}" class="btn btn-outline-dark">LOGIN</a>
+        </form>
+    </div>
+</body>
+
+</html>
